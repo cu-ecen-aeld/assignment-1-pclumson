@@ -1,6 +1,8 @@
 #!/bin/bash 
 
 
+
+
 if [ $# -eq 0 ] || [ -z "$1" ] || [ -z "$2" ] 
 then
     echo " need more arguments for writer"
@@ -44,6 +46,42 @@ exit 0
 
 
 
+
+# if [ $# -eq 0 ] || [ -z "$1" ] || [ -z "$2" ] 
+# then
+#     echo " need more arguments for writer"
+#     exit 1
+
+# fi 
+
+# writefile=$1
+# writestr=$2
+
+# if [ -e "$writefile" ]
+# then 
+#     echo "${writefile} is in the house, ressetting the file."
+#     cat /dev/null -> ${writefile}
+
+# else 
+#     echo "${writefile} is not in the house"
+#     mkdir -p "$(dirname $writefile)" && touch "$writefile"
+
+# fi 
+
+
+# if [ -d "$(dirname $writefile)" ] 
+
+# then 
+#     echo "${writefile} written to file successfully"
+#     echo "${writestr}" | tee ${writefile}
+
+# else
+#     echo " The file writing failed"
+#     exit 1
+
+# fi 
+
+# exit 0
 
 
 
